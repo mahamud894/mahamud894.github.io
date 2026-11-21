@@ -137,7 +137,7 @@ if (document.fonts && document.fonts.ready) document.fonts.ready.then(runScan); 
       links.forEach((l) => { if (l.hasAttribute("aria-current")) l.setAttribute("aria-current", "true"); });
     });
   }, { rootMargin: "-45% 0px -50% 0px" });
-  ["work", "about", "journey", "contact"].forEach((id) => { const el = document.getElementById(id); if (el) sectionObserver.observe(el); });
+  ["work", "research", "about", "journey", "contact"].forEach((id) => { const el = document.getElementById(id); if (el) sectionObserver.observe(el); });
 
   const y = document.querySelector("[data-year]");
   if (y) y.textContent = new Date().getFullYear();
